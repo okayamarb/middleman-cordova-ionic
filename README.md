@@ -1,4 +1,4 @@
-Middleman + Cordova
+Middleman + Cordova + Ionic framework
 ===================
 
 A Middleman template for Apache Cordova 3.3.x. The goal of this project is to provide a clean and efficient workflow for hybrid mobile app development while remaining platform agnostic.
@@ -14,9 +14,9 @@ A Middleman template for Apache Cordova 3.3.x. The goal of this project is to pr
 
 ### Getting Started
 
-1. Clone **middleman-cordova** into `~/.middleman`. You might need to create this directory if it doesn't exist.
+1. Clone **middleman-cordova-ionic** into `~/.middleman`. You might need to create this directory if it doesn't exist.
    ```bash
-   $ git clone git://github.com/pixelsonly/middleman-cordova.git ~/.middleman/middleman-cordova
+   $ git clone git://github.com/okayamarb/middleman-cordova-ionic.git ~/.middleman/middleman-cordova-ionic
    ```
 
 2. Create a new Cordova project by running the *create* command,
@@ -33,13 +33,12 @@ A Middleman template for Apache Cordova 3.3.x. The goal of this project is to pr
 
 4. Setup Middleman
    ```bash
-   $ middleman init middleman --template=middleman-cordova
+   $ middleman init middleman --template=middleman-cordova-ionic
    ```
 
 5. Install Bower packages
   ```bash
   $ cd middleman
-  $ bower install
   ```
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/) or feel free to hit me up on [Twitter](http://twitter.com/pixelsonly).
