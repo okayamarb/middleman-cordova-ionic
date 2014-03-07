@@ -17,8 +17,8 @@
 .DS_Store
 
 # Ignore Bower components
-/bower_components
+# /bower_components
 
-# Ignore Gemfile
-Gemfile
-Gemfile.lock
+# Ignore .idea directory
+/.idea
+*.iml

@@ -5,6 +5,7 @@ class Cordova < Middleman::Extension
     app.set :css_dir,     'css'
     app.set :js_dir,      'js'
     app.set :images_dir,  'img'
+    app.set :fonts_dir,   'font'
 
     app.after_build do |builder|
       builder.run('cp ../www/config.xml build')
