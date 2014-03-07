@@ -1,6 +1,8 @@
 require 'cordova'
 require 'uglifier'
 
+set :debug_assets, true
+
 after_configuration do
   sprockets.append_path "#{root}/bower_components/"
 end
@@ -8,7 +10,6 @@ end
 activate :cordova
 activate :automatic_image_sizes
 activate :livereload
-activate :jasmine
 
 with_layout :plain do
   page '/views/*'
@@ -17,7 +18,6 @@ end
 configure :build do
   ignore 'js/lib/*'
   ignore 'css/lib/*'
-
   activate :minify_css
   activate :minify_javascript, compressor: Uglifier.new(mangle: false)
   activate :asset_hash
